@@ -29,16 +29,16 @@ body {
     justify-content: space-between;
 }
 
-.nav-left .logo {
+.nav_left .logo {
     width: 150px;
 }
 
-.nav-right {
+.nav_right {
     display: flex;
     gap: 10px;
 }
 
-.nav-right .language-select {
+.nav_right .language_select {
     width: 120px;
     height: 35px;
     color: #ffffff;
@@ -50,23 +50,22 @@ body {
     text-align: center;
 }
 
-.nav-right .singin-button {
-    background-color: #e21515;
+.nav_right .singin_button {
+    background-color: #e50914;
     border: none;
     border-radius: 5px;
     height: 35px;
     width: 80px;
-}
-
-.nav-right .singin-button:hover {
-    background-color: #be1616;
-}
-
-.nav-right .singin-button a {
     color: #ffffff;
     font-weight: bold;
     text-decoration: none;
 }
+
+.nav_right .singin_button:hover {
+    background-color: #be1616;
+    cursor: pointer;
+}
+
 
 /* ------------------------------------------- */
 
@@ -84,20 +83,20 @@ body {
 }
 
 
-.for-dark-background {
+.for_dark_background {
     position: absolute;
     min-height: 100vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.hero-content {
+.hero_content {
     text-align: center;
     position: relative;
     z-index: 2;
 }
 
-.descriptions .hero-titel {
+.descriptions .hero_titel {
     font-size: 60px;
     font-weight: bold;
     max-width: 700px;
@@ -106,7 +105,7 @@ body {
 .descriptions .text_1 {
     font-weight: bold;
     font-size: 20px;
-    margin-top: 15px;
+    margin-top: 18px;
 }
 
 .descriptions .text_2 {
@@ -114,7 +113,7 @@ body {
     margin-top: 40px;
 }
 
-.signup-area {
+.hero .hero_content .signup_form1 {
     margin-top: 15px;
     display: flex;
     justify-content: center;
@@ -122,47 +121,45 @@ body {
     gap: 10px;
 }
 
-.signup-area input {
+.hero .hero_content .signup_form1 input {
     font-weight: bold;
     font-size: 15px;
-    background-color: rgba(25, 25, 25, 0.5);
+    background-color: rgba(25, 25, 25, 0.699);
     height: 55px;
     width: 280px;
     border-radius: 5px;
     border: 1px solid #b6b3b3;
     text-decoration: none;
-    padding: 10px;
+    padding: 14px;
 }
 
-.payment-button {
+.hero .hero_content .signup_form1 .payment_button {
     height: 55px;
     width: 280px;
-    background-color: #e21515;
+    background-color: #e50914;
     border-radius: 5px;
     border: none;
-}
-
-.payment-button:hover {
-    background-color: #be1616;
-}
-
-.payment-button a {
     text-decoration: none;
     color: #ffffff;
     font-size: 25px;
     font-weight: bold;
 }
 
-.hero-content .text_3 {
+.hero .hero_content .signup_form1 .payment_button:hover {
+    background-color: #be1616;
+    cursor: pointer;
+}
+
+.hero_content .text_3 {
     margin-top: 20px;
     color: #c6c4c4;
 }
 
 /* ------------------------------------------ */
 
-.recent-trends {
+.recent_trends {
     max-width: 80vw;
-    margin:20px auto;
+    margin: 20px auto;
 }
 
 .carousel {
@@ -172,7 +169,7 @@ body {
     overflow: hidden;
 }
 
-.movie-row {
+.movie_row {
     display: flex;
     align-items: center;
     gap: 55px;
@@ -180,10 +177,10 @@ body {
     overflow-x: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    overflow-y:hidden;
+    overflow-y: hidden;
 }
 
-.movie-card {
+.movie_card {
     position: relative;
     min-width: 150px;
     width: 180px;
@@ -241,60 +238,130 @@ body {
 
 /* ---------------------------------------------------- */
 
-.useful-features{
+.useful_features {
     width: 80vw;
     margin: 50px auto;
 }
-.feature-list{
+
+.feature_list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-    padding: 10px;
-    gap: 10px;
+    gap: 14px;
 }
-.feature{
+
+.feature {
+    position: relative;
     height: 270px;
-    width: 290px;
+    width: 295px;
     border-radius: 12px;
     background-color: rgba(29, 14, 84, 0.741);
     overflow: hidden;
 }
-.feature-list .feature p{
+
+.feature_list .feature p {
     margin: 15px;
+    font-weight: bold;
+    color: #b6b3b3;
 }
-.feature-list .feature h2{
+
+.feature_list .feature h3 {
     margin: 24px 15px;
+    font-size: 24px;
+}
+
+.useful_features .feature_list .feature img {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
 }
 
 /* -------------------------------------------------- */
 
-.faqs{
-    margin: auto;
+.faqs {
+    margin: 60px auto;
     width: 80vw;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
-.faq{
+
+.faqs .faq_lists {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.faq {
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 80px;
-    background-color: #2d2d2d;
+    background-color: #414141;
     color: #ffffff;
 }
 
-.faq p{
+.faq:hover {
+    background-color: #808080;
+}
+
+.faq p {
     font-size: 24px;
 }
-.faq img{
+
+.faq img {
     width: 50px;
 }
 
-/* @media screen and (max-width:1300px){
-    .feature-list{
-        flex-direction: column;
-    }
-} */
+/* ---------------------------------------------------------- */
+
+.signup_area {
+    margin: 80px auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.signup_area .signup_form2 input {
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgba(25, 25, 25, 0.699);
+    height: 55px;
+    width: 480px;
+    border-radius: 5px;
+    border: 1px solid #b6b3b3;
+    text-decoration: none;
+    padding: 14px;
+}
+
+.signup_area .signup_form2 button {
+    height: 55px;
+    width: 280px;
+    background-color: #e50914;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.signup_area .signup_form2 {
+    display: flex;
+    gap: 10px;
+}
+
+.signup_area .signup_form2 button:hover {
+    background-color: #be1616;
+    cursor: pointer;
+}
+
+.signup_area .signup_description {
+    color: #b6b3b3;
+    font-weight: 600;
+}
