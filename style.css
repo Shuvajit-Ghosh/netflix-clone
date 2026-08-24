@@ -15,7 +15,7 @@ body {
     color: #ffffff;
 }
 
-/* ------------------------------------- */
+/* ----------NavBar---------- */
 
 .navbar {
     position: absolute;
@@ -38,16 +38,34 @@ body {
     gap: 10px;
 }
 
+.language {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.language_icon {
+    position: absolute;
+    left: 12px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
 .nav_right .language_select {
     width: 120px;
     height: 35px;
+    padding: 0 0 0 35px;
     color: #ffffff;
-    background-color: rgba(25, 25, 25, 0.5);
-    border: 1px solid #b6b3b3;
+    background-color: rgba(24, 24, 24, 0.7);
+    border: 1px solid #777;
     border-radius: 5px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 500;
     cursor: pointer;
-    text-align: center;
 }
 
 .nav_right .singin_button {
@@ -66,8 +84,7 @@ body {
     cursor: pointer;
 }
 
-
-/* ------------------------------------------- */
+/* ----------Hero Section---------- */
 
 .hero {
     position: relative;
@@ -155,7 +172,7 @@ body {
     color: #c6c4c4;
 }
 
-/* ------------------------------------------ */
+/* ----------Trending Movie Section---------- */
 
 .recent_trends {
     max-width: 80vw;
@@ -172,13 +189,17 @@ body {
 .movie_row {
     display: flex;
     align-items: center;
-    gap: 55px;
-    padding-left: 15px;
+    gap: 50px;
+    padding: 25px 40px;
     overflow-x: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    overflow-y: hidden;
 }
+
+.movie_row::-webkit-scrollbar {
+    display: none;
+}
+
 
 .movie_card {
     position: relative;
@@ -186,26 +207,46 @@ body {
     width: 180px;
     height: 250px;
     flex-shrink: 0;
+    transition: transform 0.3s ease;
+    z-index: 1;
 }
 
-.movie-card img {
+
+.movie_card:hover {
+    transform: scale(1.10);
+    z-index: 20;
+}
+
+
+.movie_card img {
+    position: relative;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    display: block;
+    z-index: 2;
+    transition: box-shadow 0.3s ease;
+}
+
+
+.movie_card:hover img {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
 }
 
 .number {
     position: absolute;
-    left: -25px;
-    bottom: 5px;
-    z-index: 2;
-    font-size: 100px;
-    font-weight: 800;
+    left: -30px;
+    bottom: 10px;
+    z-index: 5;
+    font-size: 90px;
+    font-weight: 900;
     line-height: 1;
     color: #000;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 1.5px white;
+    pointer-events: none;
 }
+
 
 .arrow {
     position: absolute;
@@ -236,7 +277,7 @@ body {
     background: rgba(70, 70, 70, 0.95);
 }
 
-/* ---------------------------------------------------- */
+/* ----------Why to Join Section---------- */
 
 .useful_features {
     width: 80vw;
@@ -277,7 +318,7 @@ body {
     bottom: 15px;
 }
 
-/* -------------------------------------------------- */
+/* ----------F&Q Section---------- */
 
 .faqs {
     margin: 60px auto;
@@ -299,12 +340,12 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 80px;
-    background-color: #414141;
+    background-color: #313131;
     color: #ffffff;
 }
 
 .faq:hover {
-    background-color: #808080;
+    background-color: #515151;
 }
 
 .faq p {
@@ -313,9 +354,10 @@ body {
 
 .faq img {
     width: 50px;
+    filter: invert(1);
 }
 
-/* ---------------------------------------------------------- */
+/* ----------SignUp Section---------- */
 
 .signup_area {
     margin: 80px auto;
@@ -363,5 +405,58 @@ body {
 
 .signup_area .signup_description {
     color: #b6b3b3;
-    font-weight: 600;
+}
+
+/* ----------Footer---------- */
+
+.footer {
+    margin: 50px auto 100px auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+
+.footer .call {
+    color: #b6b3b3;
+}
+
+.footer .call a {
+    color: #b6b3b3;
+}
+
+.footer .questions_links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 14px;
+}
+
+.footer .questions_links a {
+    color: #b6b3b3;
+    font-size: 14px;
+}
+
+.footer .language_select {
+    width: 120px;
+    height: 35px;
+    padding: 0 0 0 35px;
+    color: #ffffff;
+    background-color: rgba(24, 24, 24, 0.7);
+    border: 1px solid #777;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.footer .website_name {
+    color: #b6b3b3;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer .disclaimer {
+    color: #b6b3b39f;
+    font-size: 12px;
+    font-weight: bold;
 }
