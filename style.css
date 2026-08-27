@@ -285,9 +285,8 @@ body {
 }
 
 .feature_list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 20px;
     gap: 14px;
 }
@@ -295,7 +294,6 @@ body {
 .feature {
     position: relative;
     height: 270px;
-    width: 295px;
     border-radius: 12px;
     background-color: rgba(29, 14, 84, 0.741);
     overflow: hidden;
@@ -369,6 +367,14 @@ body {
     gap: 20px;
 }
 
+.signup_area .signup_form2 {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
 .signup_area .signup_form2 input {
     font-weight: bold;
     font-size: 15px;
@@ -391,11 +397,6 @@ body {
     color: #ffffff;
     font-size: 25px;
     font-weight: bold;
-}
-
-.signup_area .signup_form2 {
-    display: flex;
-    gap: 10px;
 }
 
 .signup_area .signup_form2 button:hover {
@@ -459,4 +460,92 @@ body {
     color: #b6b3b39f;
     font-size: 12px;
     font-weight: bold;
+}
+
+/* ----------------------------- */
+
+
+@media (max-width:960px) {
+
+    /* ----------NavBar---------- */
+
+    /* ----------Hero---------- */
+
+    /* ----------Recent Trend---------- */
+
+    /* ----------Why to Join Section---------- */
+    .useful_features {
+        width: 90vw;
+    }
+
+    .useful_features h2 {
+        font-size: 18px;
+    }
+
+    .useful_features .feature_list {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .useful_features .feature_list .feature {
+        height: 170px;
+    }
+
+    .useful_features .feature_list .feature h3 {
+        font-size: 20px;
+        margin: 24px 15px 0px;
+    }
+
+    .useful_features .feature_list .feature p {
+        font-size: 16px;
+        margin: 10px 15px;
+    }
+
+    .useful_features .feature_list .feature img {
+        bottom: 5px;
+        right: 5px;
+    }
+
+    /* ----------F&Q Section---------- */
+    .faqs {
+        width: 90vw;
+    }
+
+    .faqs h2 {
+        font-size: 18px;
+    }
+
+    .faqs .faq_lists .faq {
+        height: 70px;
+    }
+
+    .faqs .faq_lists .faq img {
+        width: 30px;
+    }
+
+    .faqs .faq_lists .faq p {
+        font-size: 18px;
+    }
+
+    /* -----------SignUp Section---------- */
+    .signup_area {
+        width: 90vw;
+    }
+
+    .signup_area .signup_form2 input {
+        width: 100%;
+    }
+
+    .signup_area .signup_form2 button {
+        font-size: 18px;
+    }
+
+    /* ------------Footer---------- */
+    .footer {
+        width: 90vw;
+    }
+
+    .footer .questions_links {
+        grid-template-columns: 1fr 1fr;
+    }
 }
