@@ -15,7 +15,7 @@ body {
     color: #ffffff;
 }
 
-/* ----------NavBar---------- */
+/* ---------------NavBar--------------- */
 
 .navbar {
     position: absolute;
@@ -54,7 +54,6 @@ body {
     pointer-events: none;
 }
 
-
 .nav_right .language_select {
     width: 120px;
     height: 35px;
@@ -84,7 +83,7 @@ body {
     cursor: pointer;
 }
 
-/* ----------Hero Section---------- */
+/* ---------------Hero Section--------------- */
 
 .hero {
     position: relative;
@@ -95,19 +94,20 @@ body {
     background-image: url(assets/images/bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 100vh;
+    height: 100vh;
     background-size: cover;
 }
 
-
 .for_dark_background {
     position: absolute;
-    min-height: 100vh;
+    height: 100vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
 .hero_content {
+    margin: 80px auto;
+    width: 700px;
     text-align: center;
     position: relative;
     z-index: 2;
@@ -116,7 +116,6 @@ body {
 .descriptions .hero_titel {
     font-size: 60px;
     font-weight: bold;
-    max-width: 700px;
 }
 
 .descriptions .text_1 {
@@ -172,10 +171,10 @@ body {
     color: #c6c4c4;
 }
 
-/* ----------Trending Movie Section---------- */
+/* ---------------Trending Movie Section--------------- */
 
 .recent_trends {
-    max-width: 80vw;
+    width: 80vw;
     margin: 20px auto;
 }
 
@@ -200,10 +199,8 @@ body {
     display: none;
 }
 
-
 .movie_card {
     position: relative;
-    min-width: 150px;
     width: 180px;
     height: 250px;
     flex-shrink: 0;
@@ -211,12 +208,10 @@ body {
     z-index: 1;
 }
 
-
 .movie_card:hover {
     transform: scale(1.10);
     z-index: 20;
 }
-
 
 .movie_card img {
     position: relative;
@@ -228,7 +223,6 @@ body {
     z-index: 2;
     transition: box-shadow 0.3s ease;
 }
-
 
 .movie_card:hover img {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
@@ -246,7 +240,6 @@ body {
     -webkit-text-stroke: 1.5px white;
     pointer-events: none;
 }
-
 
 .arrow {
     position: absolute;
@@ -277,7 +270,7 @@ body {
     background: rgba(70, 70, 70, 0.95);
 }
 
-/* ----------Why to Join Section---------- */
+/* ---------------Why to Join Section--------------- */
 
 .useful_features {
     width: 80vw;
@@ -316,7 +309,7 @@ body {
     bottom: 15px;
 }
 
-/* ----------F&Q Section---------- */
+/* ---------------F&Q Section--------------- */
 
 .faqs {
     margin: 60px auto;
@@ -355,7 +348,7 @@ body {
     filter: invert(1);
 }
 
-/* ----------SignUp Section---------- */
+/* ---------------SignUp Section--------------- */
 
 .signup_area {
     margin: 80px auto;
@@ -408,7 +401,7 @@ body {
     color: #b6b3b3;
 }
 
-/* ----------Footer---------- */
+/* ---------------Footer--------------- */
 
 .footer {
     margin: 50px auto 100px auto;
@@ -462,20 +455,293 @@ body {
     font-weight: bold;
 }
 
-/* ----------------------------- */
+/* ================================================== */
 
+@media (max-width: 600px) {
 
-@media (max-width:960px) {
+    header {
+        width: 100vw;
+    }
 
-    /* ----------NavBar---------- */
+    /* ---------------NavBar--------------- */
 
-    /* ----------Hero---------- */
+    .navbar {
+        width: 100vw;
+    }
 
-    /* ----------Recent Trend---------- */
+    .nav_left .logo {
+        width: 90px;
+    }
 
-    /* ----------Why to Join Section---------- */
+    .nav_right .singin_button {
+        height: 30px;
+        width: 60px;
+    }
+
+    .nav_right .language_select {
+        height: 30px;
+        width: 110px;
+    }
+
+    /* ---------------Hero--------------- */
+
+    .hero_content {
+        width: 320px;
+        margin-top: 150px;
+    }
+
+    .descriptions .hero_titel {
+        font-size: 34px;
+    }
+
+    .hero .hero_content .descriptions .text_1 {
+        font-size: 14px;
+        font-weight: normal;
+        margin-top: 8px;
+    }
+
+    .hero .hero_content .descriptions .text_2 {
+        margin-top: 14px;
+    }
+
+    .hero .hero_content .signup_form1 {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .hero .hero_content .signup_form1 input {
+        height: 45px;
+        width: 100%;
+    }
+
+    .hero .hero_content .signup_form1 .payment_button {
+        font-size: 16px;
+        height: 45px;
+        width: 200px;
+    }
+
+    .hero .hero_content .text_3 {
+        margin-top: 10px;
+    }
+
+    /* ---------------Trending Movie Section--------------- */
+
+    .recent_trends {
+        width: 90vw;
+    }
+
+    .recent_trends h2 {
+        font-size: 18px;
+    }
+
+    .movie_row {
+        padding: 10px 15px;
+        gap: 20px;
+    }
+
+    .movie_card {
+        width: 112px;
+        height: 157px;
+    }
+
+    .left {
+        left: 5px;
+    }
+
+    .right {
+        right: 5px;
+    }
+
+    .number {
+        font-size: 60px;
+        left: -14px;
+        -webkit-text-stroke: 1px white;
+    }
+
+    /* ---------------Why to Join Section--------------- */
+
     .useful_features {
         width: 90vw;
+        margin: 30px auto;
+    }
+
+    .useful_features h2 {
+        font-size: 18px;
+    }
+
+    .useful_features .feature_list {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .useful_features .feature_list .feature {
+        height: 180px;
+    }
+
+    .useful_features .feature_list .feature h3 {
+        font-size: 20px;
+        margin: 24px 15px 0px;
+    }
+
+    .useful_features .feature_list .feature p {
+        font-size: 14px;
+        margin: 10px 15px;
+    }
+
+    .useful_features .feature_list .feature img {
+        bottom: 5px;
+        right: 5px;
+    }
+
+    /* ---------------F&Q Section--------------- */
+
+    .faqs {
+        width: 90vw;
+    }
+
+    .faqs h2 {
+        font-size: 18px;
+    }
+
+    .faqs .faq_lists .faq {
+        height: 70px;
+    }
+
+    .faqs .faq_lists .faq p {
+        font-size: 18px;
+    }
+
+    .faqs .faq_lists .faq img {
+        width: 30px;
+    }
+
+    /* ---------------SignUp Section--------------- */
+
+    .signup_area {
+        width: 90vw;
+        margin: 50px auto;
+    }
+
+    .signup_area .signup_form2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .signup_area .signup_form2 input {
+        width: 100%;
+        height: 45px;
+    }
+
+    .signup_area .signup_form2 button {
+        font-size: 18px;
+        height: 45px;
+        width: 200px;
+    }
+
+    /* ---------------Footer--------------- */
+
+    .footer {
+        width: 90vw;
+    }
+
+    .footer .questions_links {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ================================================== */
+
+@media (min-width: 600px) and (max-width:960px) {
+
+    header {
+        width: 100vw;
+    }
+
+    /* ---------------NavBar--------------- */
+
+    .navbar {
+        width: 100vw;
+    }
+
+    .nav_left .logo {
+        width: 90px;
+    }
+
+    .nav_right .language_select {
+        height: 30px;
+        width: 110px;
+
+    }
+
+    .nav_right .singin_button {
+        height: 30px;
+        width: 60px;
+    }
+
+    /* ---------------Hero--------------- */
+
+    .hero_content {
+        width: 450px;
+        margin-top: 150px;
+    }
+
+    .descriptions .hero_titel {
+        font-size: 34px;
+    }
+
+    .hero .hero_content .descriptions .text_1 {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .hero .hero_content .descriptions .text_2 {
+        margin-top: 18px;
+    }
+
+    .hero .hero_content .signup_form1 .payment_button {
+        font-size: 18px;
+        width: 260px;
+    }
+
+    /* ---------------Trending Movie Section--------------- */
+
+    .recent_trends {
+        width: 90vw;
+    }
+
+    .recent_trends h2 {
+        font-size: 18px;
+    }
+
+    .movie_row {
+        padding: 10px 15px;
+        gap: 20px;
+    }
+
+    .movie_card {
+        width: 115px;
+        height: 160px;
+    }
+
+    .left {
+        left: 5px;
+    }
+
+    .right {
+        right: 5px;
+    }
+
+    .number {
+        font-size: 60px;
+        left: -14px;
+        -webkit-text-stroke: 1px white;
+    }
+
+    /* ---------------Why to Join Section--------------- */
+
+    .useful_features {
+        width: 90vw;
+        margin: 40px auto;
     }
 
     .useful_features h2 {
@@ -506,7 +772,8 @@ body {
         right: 5px;
     }
 
-    /* ----------F&Q Section---------- */
+    /* ---------------F&Q Section--------------- */
+
     .faqs {
         width: 90vw;
     }
@@ -519,17 +786,19 @@ body {
         height: 70px;
     }
 
-    .faqs .faq_lists .faq img {
-        width: 30px;
-    }
-
     .faqs .faq_lists .faq p {
         font-size: 18px;
     }
 
-    /* -----------SignUp Section---------- */
+    .faqs .faq_lists .faq img {
+        width: 30px;
+    }
+
+    /* ---------------SignUp Section--------------- */
+
     .signup_area {
         width: 90vw;
+        margin: 50px auto;
     }
 
     .signup_area .signup_form2 input {
@@ -540,12 +809,145 @@ body {
         font-size: 18px;
     }
 
-    /* ------------Footer---------- */
+    /* ---------------Footer--------------- */
+
     .footer {
         width: 90vw;
     }
 
     .footer .questions_links {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ================================================== */
+
+@media (min-width: 960px) and (max-width:1280px) {
+
+    header {
+        width: 90vw;
+    }
+
+    /* ---------------NavBar--------------- */
+
+    .navbar {
+        width: 90vw;
+    }
+
+    /* ---------------Hero--------------- */
+
+    .hero .hero_content {
+        width: 550px;
+        margin-top: 150px;
+    }
+
+    .hero .hero_content .descriptions .hero_titel {
+        font-size: 44px;
+    }
+
+    .hero .hero_content .descriptions .text_1 {
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    .hero .hero_content .descriptions .text_2 {
+        margin-top: 14px;
+    }
+
+    .hero .hero_content .signup_form1 .payment_button {
+        font-size: 20px;
+        width: 280px;
+    }
+
+    /* ---------------Trending Movie Section--------------- */
+
+    .recent_trends {
+        width: 85vw;
+    }
+
+    .movie_row {
+        padding: 10px 22px;
+        gap: 44px;
+    }
+
+    .movie_card {
+        width: 144px;
+        height: 200px;
+    }
+
+    .left {
+        left: 5px;
+    }
+
+    .right {
+        right: 5px;
+    }
+
+    .number {
+        font-size: 80px;
+        left: -24px;
+        -webkit-text-stroke: 1.5px white;
+    }
+
+    /* ---------------Why to Join Section--------------- */
+
+    .useful_features {
+        width: 85vw;
+    }
+
+    .useful_features .feature_list {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+
+    .useful_features .feature_list .feature {
+        height: 194px;
+    }
+
+    .useful_features .feature_list .feature h3 {
+        font-size: 20px;
+    }
+
+    .useful_features .feature_list .feature p {
+        font-size: 16px;
+    }
+
+    .useful_features .feature_list .feature img {
+        bottom: 8px;
+        right: 8px;
+    }
+
+    /* ---------------F&Q Section--------------- */
+
+    .faqs {
+        width: 85vw;
+    }
+
+    .faqs .faq_lists .faq {
+        height: 85px;
+    }
+
+    .faqs .faq_lists .faq img {
+        width: 40px;
+    }
+
+    /* ---------------SignUp Section--------------- */
+
+    .signup_area {
+        width: 85vw;
+    }
+
+    .signup_area .signup_form2 button {
+        font-size: 20px;
+    }
+
+    /* ---------------Footer--------------- */
+
+    .footer {
+        width: 85vw;
+    }
+
+    .footer .questions_links {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
