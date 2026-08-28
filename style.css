@@ -67,7 +67,7 @@ body {
     cursor: pointer;
 }
 
-.nav_right .singin_button {
+.nav_right .signin_button {
     background-color: #e50914;
     border: none;
     border-radius: 5px;
@@ -78,7 +78,7 @@ body {
     text-decoration: none;
 }
 
-.nav_right .singin_button:hover {
+.nav_right .signin_button:hover {
     background-color: #be1616;
     cursor: pointer;
 }
@@ -100,8 +100,9 @@ body {
 
 .for_dark_background {
     position: absolute;
-    height: 100vh;
-    width: 100vw;
+    inset: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -113,7 +114,7 @@ body {
     z-index: 2;
 }
 
-.descriptions .hero_titel {
+.descriptions .hero_title {
     font-size: 60px;
     font-weight: bold;
 }
@@ -145,7 +146,6 @@ body {
     width: 280px;
     border-radius: 5px;
     border: 1px solid #b6b3b3;
-    text-decoration: none;
     padding: 14px;
 }
 
@@ -376,7 +376,6 @@ body {
     width: 480px;
     border-radius: 5px;
     border: 1px solid #b6b3b3;
-    text-decoration: none;
     padding: 14px;
 }
 
@@ -457,7 +456,7 @@ body {
 
 /* ================================================== */
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
 
     header {
         width: 100vw;
@@ -473,7 +472,7 @@ body {
         width: 90px;
     }
 
-    .nav_right .singin_button {
+    .nav_right .signin_button {
         height: 30px;
         width: 60px;
     }
@@ -485,12 +484,18 @@ body {
 
     /* ---------------Hero--------------- */
 
+    .hero {
+        height: 650px;
+        background-size: cover;
+        background-position: center center;
+    }
+
     .hero_content {
         width: 320px;
         margin-top: 150px;
     }
 
-    .descriptions .hero_titel {
+    .descriptions .hero_title {
         font-size: 34px;
     }
 
@@ -651,7 +656,7 @@ body {
 
 /* ================================================== */
 
-@media (min-width: 600px) and (max-width:960px) {
+@media (min-width: 600px) and (max-width:959px) {
 
     header {
         width: 100vw;
@@ -673,19 +678,25 @@ body {
 
     }
 
-    .nav_right .singin_button {
+    .nav_right .signin_button {
         height: 30px;
         width: 60px;
     }
 
     /* ---------------Hero--------------- */
 
+    .hero {
+        height: 650px;
+        background-size: cover;
+        background-position: center center;
+    }
+
     .hero_content {
         width: 450px;
         margin-top: 150px;
     }
 
-    .descriptions .hero_titel {
+    .descriptions .hero_title {
         font-size: 34px;
     }
 
@@ -841,7 +852,7 @@ body {
         margin-top: 150px;
     }
 
-    .hero .hero_content .descriptions .hero_titel {
+    .hero .hero_content .descriptions .hero_title {
         font-size: 44px;
     }
 
